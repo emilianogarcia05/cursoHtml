@@ -1,0 +1,296 @@
+/* selector{
+    propiedad: valor;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+/* Se resetea para eliminar la diferencia de estilos entre los diferentes navegadores */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(64, 68, 110);
+    text-align: center;
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+nav{
+    background-color: black;
+    padding: 20px;
+    border: 1px white solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+footer{
+    background-color: black;
+    border: 1px white solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 40px;
+    background-color: rgb(151, 158, 228);
+    text-align: center;
+    padding: 5px;
+    border: 1px white solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(151, 158, 228);
+    text-align: center;
+    padding: 5px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(151, 158, 228);
+    text-align: center;
+    padding: 5px;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 20px auto;
+    margin-bottom: 0px;
+}
+
+.sectionInfo{
+    margin: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.divIndex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 50px;
+}
+
+.divIndex1{
+    flex-basis: 70%;
+}
+
+.divIndex2{
+    flex-basis: 29%;
+    text-align: center;
+}
+
+.divCategorias{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.divMiniCategoriaInstrucion{
+    border: 1px white solid;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.divMiniCategoria{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 30px 0px 30px;
+}
+
+.divImagenesProductos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0px 30px 30px 30px;
+
+}
+
+.divFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.divTituloCategoria{
+    width: 50%;
+    margin: 0% auto;
+}
+
+.imgCarritoCompras{
+    width: 80%;
+    padding: 10px;
+}
+
+.imgCategorias{
+    width: 200px;
+    border: 1px white solid;
+    padding: 20px;
+    margin: 70px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.imgCategoriasMini{
+    width: 100px;
+    border: 1px white solid;
+    padding: 20px;
+    margin: 20px 20px 0px 20px ;
+}
+
+.imgCategoriasMiniSeleccion{
+    background-color: rgb(218, 85, 211);
+    width: 100px;
+    border: 1px white solid;
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+}
+
+.imgProductos{
+    width: 300px;
+    margin: 20px;
+}
+
+.alinearIcono{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.letraNegrita{
+    font-weight: 1000;
+}
+
+.nombreCategoriaMini{
+    margin: 0px 0px 20px 0px;
+}
+
+.letraMediana{
+    font-size: 20px;
+    line-height: 250%
+}
+
+.bordeBlancoInicioCompra{
+    border: 1px solid white;
+    text-align: center;
+    margin: 0px auto;
+    height: 70%;
+    width: 50%;
+}
+
+.bordeBlancoSectionInfo{
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.caja{
+    background-color: blueviolet;
+    border: 2px solid white;
+    line-height: 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    background-color: brown;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.c1{
+    /* esto indica la lineas que va a ocupar, no las columnas */
+    grid-column: 1/4;
+}
+
+.c2{
+    /* span significa que expante y el número es la cantdad de columnas, no es la cantidad de lineas */
+    grid-column: 1 /  span 3; 
+}
+
+.grid2{
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                        'menus contenido'
+                        'footer footer';
+    grid-template-rows: 20% 70% 20% ;
+    background-color: brown;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.b1{
+    grid-area: cabecera;
+}
+
+.b2{
+    grid-area: menus;
+}
+
+.b3{
+    grid-area: contenido;
+}
+
+.b4{
+    grid-area: footer;
+}
