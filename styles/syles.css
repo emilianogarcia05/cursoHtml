@@ -124,6 +124,7 @@ h4 {
     display: grid;
     grid-template-areas: 'catAfricanas catAfricanas catAfricanas'
         'catAnimales catBudas catVarios';
+    grid-template-columns: 30% 30% 30%;
     padding: 50px;
 }
 
@@ -144,7 +145,6 @@ h4 {
 }
 
 .divMiniCategoriaInstrucion {
-    background-color: black;
     border: 1px white solid;
     border-left: 0px;
     border-right: 0px;
@@ -209,16 +209,20 @@ h4 {
 }
 
 .imgCategoriasMiniSeleccion {
-    background-color: rgb(218, 85, 211);
-    width: 100px;
-    border: 1px white solid;
-    padding: 20px;
+    width: 120px;
+    border: 3px white solid;
     margin: 20px 20px 0px 20px;
 }
 
 .imgProductos {
     width: 300px;
     margin: 20px;
+}
+
+.imgIndex{
+    /* border: 2px solid white; */
+    padding: 5px;
+    line-height: 100px;
 }
 
 .alinearIcono {
