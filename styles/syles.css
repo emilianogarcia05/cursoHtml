@@ -5,24 +5,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 /* Se resetea para eliminar la diferencia de estilos entre los diferentes navegadores */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(64, 68, 110);
     text-align: center;
 }
 
 
-p{
+p {
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
 }
 
-a{
+a {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     color: white;
@@ -30,7 +30,7 @@ a{
     font-weight: 1000;
 }
 
-nav{
+nav {
     background-color: black;
     padding: 20px;
     border: 1px white solid;
@@ -39,7 +39,7 @@ nav{
     border-left: 0px;
 }
 
-footer{
+footer {
     background-color: black;
     border: 1px white solid;
     border-left: 0px;
@@ -47,7 +47,7 @@ footer{
     border-bottom: 0px;
 }
 
-ul{
+ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -55,7 +55,7 @@ ul{
     list-style: none;
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 40px;
@@ -67,7 +67,7 @@ h1{
     border-right: 0px;
 }
 
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 30px;
@@ -76,7 +76,7 @@ h2{
     padding: 5px;
 }
 
-h3{
+h3 {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 20px;
@@ -85,7 +85,7 @@ h3{
     padding: 5px;
 }
 
-h4{
+h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: white;
@@ -93,14 +93,14 @@ h4{
     margin-bottom: 0px;
 }
 
-.sectionInfo{
+.sectionInfo {
     margin: 50px;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
 }
 
-.divIndex{
+.divIndex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,26 +111,40 @@ h4{
     margin: 50px;
 }
 
-.divIndex1{
+.divIndex1 {
     flex-basis: 70%;
 }
 
-.divIndex2{
+.divIndex2 {
     flex-basis: 29%;
     text-align: center;
 }
 
-.divCategorias{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.divGridCategorias {
+    display: grid;
+    grid-template-areas: 'catAfricanas catAfricanas catAfricanas'
+        'catAnimales catBudas catVarios';
+    padding: 50px;
 }
 
-.divMiniCategoriaInstrucion{
+.catAficanas {
+    grid-area: catAfricanas;
+}
+
+.catAnimales {
+    grid-area: catAnimales;
+}
+
+.catBudas {
+    grid-area: catBudas;
+}
+
+.catVarios {
+    grid-area: catVarios;
+}
+
+.divMiniCategoriaInstrucion {
+    background-color: black;
     border: 1px white solid;
     border-left: 0px;
     border-right: 0px;
@@ -138,10 +152,9 @@ h4{
     text-align: center;
     display: flex;
     flex-direction: column;
-
 }
 
-.divMiniCategoria{
+.divMiniCategoria {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -149,7 +162,7 @@ h4{
     margin: 0px 30px 0px 30px;
 }
 
-.divImagenesProductos{
+.divImagenesProductos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -159,7 +172,7 @@ h4{
 
 }
 
-.divFooter{
+.divFooter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -169,17 +182,17 @@ h4{
     padding: 10px;
 }
 
-.divTituloCategoria{
+.divTituloCategoria {
     width: 50%;
     margin: 0% auto;
 }
 
-.imgCarritoCompras{
+.imgCarritoCompras {
     width: 80%;
     padding: 10px;
 }
 
-.imgCategorias{
+.imgCategorias {
     width: 200px;
     border: 1px white solid;
     padding: 20px;
@@ -188,14 +201,14 @@ h4{
     margin-bottom: 0px;
 }
 
-.imgCategoriasMini{
+.imgCategoriasMini {
     width: 100px;
     border: 1px white solid;
     padding: 20px;
-    margin: 20px 20px 0px 20px ;
+    margin: 20px 20px 0px 20px;
 }
 
-.imgCategoriasMiniSeleccion{
+.imgCategoriasMiniSeleccion {
     background-color: rgb(218, 85, 211);
     width: 100px;
     border: 1px white solid;
@@ -203,30 +216,30 @@ h4{
     margin: 20px 20px 0px 20px;
 }
 
-.imgProductos{
+.imgProductos {
     width: 300px;
     margin: 20px;
 }
 
-.alinearIcono{
+.alinearIcono {
     vertical-align: middle;
     padding: 5px;
 }
 
-.letraNegrita{
+.letraNegrita {
     font-weight: 1000;
 }
 
-.nombreCategoriaMini{
+.nombreCategoriaMini {
     margin: 0px 0px 20px 0px;
 }
 
-.letraMediana{
+.letraMediana {
     font-size: 20px;
     line-height: 250%
 }
 
-.bordeBlancoInicioCompra{
+.bordeBlancoInicioCompra {
     border: 1px solid white;
     text-align: center;
     margin: 0px auto;
@@ -234,7 +247,7 @@ h4{
     width: 50%;
 }
 
-.bordeBlancoSectionInfo{
+.bordeBlancoSectionInfo {
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
@@ -243,24 +256,19 @@ h4{
     width: 90%;
 }
 
-.caja{
-    background-color: blueviolet;
+.caja {
+    background-color: black;
+    color: white;
     border: 2px solid white;
     line-height: 100px;
 }
 
-.colorNav{
+.colorNav {
     background-color: blueviolet;
     color: white;
 }
 
-.gridIndex{
-    display: gris;
-    grid-template-columns: auto auto;
-    grid-row: auto;
-}
-
-.grid{
+.grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -269,39 +277,39 @@ h4{
     margin-bottom: 20px;
 }
 
-.c1{
+.c1 {
     /* esto indica la lineas que va a ocupar, no las columnas */
     grid-column: 1/4;
 }
 
-.c2{
+.c2 {
     /* span significa que expante y el número es la cantdad de columnas, no es la cantidad de lineas */
-    grid-column: 1 /  span 3; 
+    grid-column: 1 / span 3;
 }
 
-.grid2{
+.grid2 {
     display: grid;
     grid-template-areas: 'cabecera cabecera'
-                        'menus contenido'
-                        'footer footer';
-    grid-template-rows: 20% 70% 20% ;
+        'menus contenido'
+        'footer footer';
+    grid-template-rows: 20% 70% 20%;
     background-color: brown;
     border: 2px solid black;
     margin-bottom: 20px;
 }
 
-.b1{
+.b1 {
     grid-area: cabecera;
 }
 
-.b2{
+.b2 {
     grid-area: menus;
 }
 
-.b3{
+.b3 {
     grid-area: contenido;
 }
 
-.b4{
+.b4 {
     grid-area: footer;
 }
