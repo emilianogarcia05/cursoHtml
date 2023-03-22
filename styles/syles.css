@@ -74,6 +74,7 @@ h2 {
     background-color: rgb(151, 158, 228);
     text-align: center;
     padding: 5px;
+    border-radius: 5%;
 }
 
 h3 {
@@ -122,10 +123,18 @@ h4 {
 
 .divGridCategorias {
     display: grid;
-    grid-template-areas: 'catAfricanas catAfricanas catVarios'
+    place-items: center;
+    grid-template-areas: 'instruccionIndex instruccionIndex instruccionIndex' 
+    'catAfricanas catAfricanas catVarios'
         'catAnimales catBudas catVarios';
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
     padding: 10%;
+}
+
+.instruccionIndex{
+    grid-area: instruccionIndex;
+    background-color: rgb(151, 158, 228);
 }
 
 .catAficanas {
@@ -209,9 +218,9 @@ h4 {
 }
 
 .imgCategoriasMiniSeleccion {
-    width: 120px;
-    border: 3px white solid;
-    margin: 20px 20px 0px 20px;
+    width: 110px;
+    border: 2px white solid;
+    margin: 10px 10px 0px 10px;
 }
 
 .imgProductos {
@@ -220,7 +229,6 @@ h4 {
 }
 
 .imgIndex{
-    background-color: rgb(55, 52, 53);
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -262,60 +270,7 @@ h4 {
     width: 90%;
 }
 
-.caja {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    line-height: 100px;
-}
-
 .colorNav {
     background-color: blueviolet;
     color: white;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    background-color: brown;
-    border: 2px solid black;
-    margin-bottom: 20px;
-}
-
-.c1 {
-    /* esto indica la lineas que va a ocupar, no las columnas */
-    grid-column: 1/4;
-}
-
-.c2 {
-    /* span significa que expante y el número es la cantdad de columnas, no es la cantidad de lineas */
-    grid-column: 1 / span 3;
-}
-
-.grid2 {
-    display: grid;
-    grid-template-areas: 'cabecera cabecera'
-        'menus contenido'
-        'footer footer';
-    grid-template-rows: 20% 70% 20%;
-    background-color: brown;
-    border: 2px solid black;
-    margin-bottom: 20px;
-}
-
-.b1 {
-    grid-area: cabecera;
-}
-
-.b2 {
-    grid-area: menus;
-}
-
-.b3 {
-    grid-area: contenido;
-}
-
-.b4 {
-    grid-area: footer;
 }
