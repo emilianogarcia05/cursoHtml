@@ -134,6 +134,7 @@ h4 {
 
 .instruccionIndex{
     grid-area: instruccionIndex;
+    width: 100%;
     background-color: rgb(151, 158, 228);
 }
 
@@ -270,7 +271,26 @@ h4 {
     width: 90%;
 }
 
-.colorNav {
-    background-color: blueviolet;
-    color: white;
+@media screen and (max-width: 400px){
+    body{
+        background-color: rgb(151, 158, 228);
+    }
+    h1{
+        background-color:rgb(64, 68, 110)
+    }
+    h2{
+        background-color:rgb(64, 68, 110)
+    }
+    h3{
+        background-color:rgb(64, 68, 110)
+    }
+    h4{
+        background-color:rgb(64, 68, 110)
+    }
+    .divGridCategorias {
+        grid-template-areas: 'instruccionIndex instruccionIndex ' 
+        'catAfricanas catAfricanas'
+        'catAnimales catVarios'
+        'catBudas catVarios';
+    }
 }
